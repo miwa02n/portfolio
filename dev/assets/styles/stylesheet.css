@@ -44,15 +44,17 @@ main{
 }
 
 .contentsWrapper{
+	width: 100%;
 	position: absolute;
+	text-align: center;
 	top: -45px;
 	z-index: 10;
 }
 
 .card{
 	display: inline-block;
-	width: 380px;
-	margin: 20px 20px 40px;
+	width: 45%;
+	margin: 20px 16px 40px;
 }
 
 .cardThumbnail{
@@ -64,12 +66,14 @@ main{
 	display: block;
 	margin-top: 10px;
 	color: #2A3033;
+	text-align: left;
 }
 
 .cardRole{
 	display: block;
 	margin-top: 8px;
 	color: #8E9294;
+	text-align: left;
 }
 
 footer{
@@ -113,4 +117,14 @@ footer{
 	font-size: 12px;
 	margin-top: 80px;
 	color: #8E9294;/*$subtext*/
+}
+
+
+@media screen and (max-width: 760px) {
+.card{
+	width: 100%;
+	margin: 20px 0px 40px;
+	display: none;
+}
+
 }

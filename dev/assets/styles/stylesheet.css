@@ -1,0 +1,116 @@
+@import "variables";
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	background-color: #D4ECEE; /*$main*/
+}
+
+.headerWrapper{
+	padding-top: 160px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+	font-size: 27px;
+	font-weight: lighter;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px 16px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 80px 16px 60px;
+	border-radius: 20px;
+	color: #2A3033; /*$maintext*/
+}
+
+nav a.current{
+	background: white;
+}
+
+main{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	height: 600px;
+}
+
+.contentsWrapper{
+	position: absolute;
+	top: -45px;
+	z-index: 10;
+}
+
+.card{
+	display: inline-block;
+	width: 380px;
+	margin: 20px 20px 40px;
+}
+
+.cardThumbnail{
+	height: 200px;
+	background: #F7F7F7;
+}
+
+.cardTitle{
+	display: block;
+	margin-top: 10px;
+	color: #2A3033;
+}
+
+.cardRole{
+	display: block;
+	margin-top: 8px;
+	color: #8E9294;
+}
+
+footer{
+	width: 100%;
+	background: #fff;
+}
+
+.footerWrapper{
+	width: 80%;
+	margin: 120px auto 40px; 
+	border-top: solid 1px #e1e1e1;
+}
+
+.footerMenu{
+	padding-top: 20px;
+}
+
+.footerMenu a{
+	color:  #2A3033; /*$maintext*/
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding-top: 20px;
+}
+
+.footerMenu a.sns{
+	color: #2A3033; /*$maintext*/
+}
+
+.sns{
+	float: right;
+}
+
+.sns a i{
+	font-size: 20px;
+	color: #2A3033; /*$maintext*/
+	padding: 10px;
+}
+
+.copyright{
+	font-size: 12px;
+	margin-top: 80px;
+	color: #8E9294;/*$subtext*/
+}

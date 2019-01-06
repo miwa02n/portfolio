@@ -6,15 +6,25 @@ body{
 }
 
 header{
+	position: relative;
 	width: 100%;
+}
+
+.header-color{
+	position: absolute;
+	height: 380px;
+	width: 100%;
+	top: 0;
 	background-color: #D4ECEE; /*$main*/
+	z-index: -1;
 }
 
 .headerWrapper{
-	padding-top: 160px;
-	width: 80%;
+	padding-top: 140px;
+	width: 800px;
 	margin: 0 auto;
 	text-align: center;
+	z-index: 10;
 }
 
 h1{
@@ -22,45 +32,46 @@ h1{
 	font-weight: lighter;
 }
 
+nav{
+	 margin: 80px 0 37px;
+}
+
 nav a{
 	display: inline-block;
 	padding: 10px 16px;
 	font-weight: bold;
 	text-decoration: none;
-	margin: 80px 16px 60px;
+	margin: 0 16px;
 	border-radius: 20px;
 	color: #2A3033; /*$maintext*/
 }
 
 nav a.current{
-	background: white;
+	background: rgba(255, 255, 255, .5);
 }
 
 main{
-	position: relative;
-	width: 80%;
+	width: 800px;
 	margin: 0 auto;
-	height: 600px;
 }
 
 .contentsWrapper{
 	width: 100%;
 	position: absolute;
 	text-align: center;
-	top: -45px;
-	z-index: 10;
+	z-index: 20;
 }
 
 .card{
 	display: inline-block;
-	min-width: 380px;
-    max-width: 400px;
-	margin: 20px 16px 40px;
+	width: 357px;
+	margin: 0px 20px 40px;
 }
 
 .cardThumbnail{
 	height: 200px;
 	background: #F7F7F7;
+	border-radius: 8px;
 }
 
 .cardTitle{
@@ -83,8 +94,8 @@ footer{
 }
 
 .footerWrapper{
-	width: 80%;
-	margin: 120px auto 40px; 
+	width: 768px;
+	margin: 120px auto 40px;
 	border-top: solid 1px #e1e1e1;
 }
 
@@ -127,5 +138,4 @@ footer{
 	margin: 20px 0px 40px;
 	display: none;
 }
-
 }

@@ -33,7 +33,7 @@ nav a{
 }
 
 nav a.current{
-	background: white;
+	background: rgba(255, 255, 255, .5);
 }
 
 main{
@@ -58,6 +58,7 @@ main{
 .cardThumbnail{
 	height: 200px;
 	background: #F7F7F7;
+	border-radius: 8px;
 }
 
 .cardTitle{

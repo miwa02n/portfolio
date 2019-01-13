@@ -3,6 +3,18 @@ body{
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	box-sizing: border-box;
+	animation: fadeIn 1500ms ease 0s 1 normal;
+    -webkit-animation: fadeIn 1500ms ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 /*header styles*/
@@ -70,6 +82,14 @@ main{
 	display: inline-block;
 	width: 357px;
 	margin: 0px 20px 40px;
+	opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+}
+
+.card.active{
+	opacity: 1;
 }
 
 .cardThumbnail{

@@ -18,38 +18,38 @@
 				<a href="about.html">About</a>
 			</nav>
 		</div>
-		<div class="header-color"> </div>
+		<div class="headerColor"> </div>
 	</header>
 	<main>
 		<div class="contentsWrapper">
-			<div class="card">
+			<a href="work001.html" class="card">
 				<div class="cardThumbnail">
 					<img src="assets/images/work1.png" alt="works" width="100%">
 				</div>
-				<span class="cardTitle">PETOKOTO</span>
-				<span class="cardRole">UX/UI Design</span>
-			</div>
-			<div class="card">
+				<span class="title">PETOKOTO</span>
+				<span class="role">UX/UI Design</span>
+			</a>
+			<a href="work002.html" class="card">
 				<div class="cardThumbnail">
 					<img src="assets/images/work2.png" alt="works" width="100%">
 				</div>
-				<span class="cardTitle">OMUSIBI</span>
-				<span class="cardRole">UI Design</span>
-			</div>
-			<div class="card">
+				<span class="title">OMUSIBI</span>
+				<span class="role">UI Design</span>
+			</a>
+			<a href="work003.html" class="card">
 				<div class="cardThumbnail">
 					<img src="assets/images/work3.png" alt="works" width="100%">
 				</div>
-				<span class="cardTitle">SUPPY</span>
-				<span class="cardRole">Package Design</span>
-			</div>
-			<div class="card">
+				<span class="title">SUPPY</span>
+				<span class="role">Package Design</span>
+			</a>
+			<a href="work004.html" class="card">
 				<div class="cardThumbnail">
 					<img src="assets/images/work4.png" alt="works" width="100%">
 				</div>
-				<span class="cardTitle">SYRUP.inc Business Card</span>
-				<span class="cardRole">Design Renwal</span>
-			</div>
+				<span class="title">SYRUP.inc Business Card</span>
+				<span class="role">Design Renwal</span>
+			</a>
 		</div>
 	</main>
 	<footer>
@@ -67,5 +67,14 @@
 			<p class="copyright">&copy; AraiMiwa 2019 | Source made by AraiMiwa</p>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		$(function() {
+    	$("card").each(function(i) {
+		        setTimeout(function() {
+		            $("card").eq(i).addClass("active");
+		        }, 100 * i);
+		    });
+		});
+	</script>
 </body>
 </html>
